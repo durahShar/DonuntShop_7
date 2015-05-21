@@ -1,0 +1,142 @@
+h1 {
+  color: black;
+  text-align: left;
+  font-size: 40px;
+  font-weight: bold;
+}
+
+h3 {
+  color: white;
+  text-align: center;
+}
+
+th {
+  color: black;
+  text-align: right;
+}
+
+td {
+  color: black;
+  text-align: center;
+  padding: 0,20,0,20;
+}
+
+table {
+  border-collapse: collapse;
+}
+
+nav {
+  //background-color: #cccccc;
+  position: relative;
+  top: 5px;
+}
+
+article {
+ //background-color: #A4D997;
+}
+
+div {
+  //border: 1px solid black;
+}
+
+#report {
+  width: 800px;
+  background-color: #a4d997;
+  border: 1px solid black;
+}
+
+#shopreport {
+  width: 300px;
+  position: relative;
+  top: 20px;
+  font-family: Arial;
+  background-color: #a4d997;
+  border: 1px solid black;
+}
+
+.shopContainer {
+  width: 300px;
+}
+
+.shopReportPosition{
+  position: relative;
+  top: -37px;
+  left: 130px;
+}
+
+.reportPosition{
+  position: relative;
+  top: -80px;
+  left: 130px;
+}
+
+.addShopPosition{
+  position: relative;
+  top: -60px;
+  left: 130px;
+}
+
+.updateShopPosition{
+  position: relative;
+  top: -110px;
+  left: 470px;
+}
+
+.header {
+  width: 930px;
+  height: 50px;
+  color: black;
+  text-align: center;
+  font-size: 40px;
+  background-color: #a4d997;
+  border: 1px solid black;
+}
+
+.nav {
+  width: 800px;
+  height: 22px;
+  color: black;
+  //background-color: #cccccc;
+}
+
+.heading {
+  color: black;
+  text-align: center;
+}
+
+.shop_name {
+  color: black;
+  text-align: left;
+}
+
+.title {
+  font-size: 20px;
+  font-style: bold;
+  color: black;
+}
+
+.even {
+  background-color: #cccccc;
+}
+
+.odd {
+  background-color: #eeeeee;
+}
+
+.footer {
+  border-top: 2px solid #000000;
+  background-color: #cccccc;
+  position: absolute;
+  left: 70px;
+  top: 510px;
+}
+
+.btn {
+  position: relative;
+  width: 122px;
+  height: 20px;
+  background-color: #a4d997;
+  border: 1px solid black;
+  text-align: center;
+  margin-bottom: 5px;
+}
