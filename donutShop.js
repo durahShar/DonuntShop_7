@@ -129,7 +129,7 @@ function ShopManager(){
   }
 
   this.updateShopByIndex = function(index, minCustomers, maxCustomers, numDonutsHour, numHours){
-    
+
     var shopData = shopList[index].shopData;
     shopData.updateShop(minCustomers, maxCustomers, numDonutsHour, numHours);
 
@@ -174,7 +174,7 @@ function ShopManager(){
     $(".updateShopBtn").attr("data", index);
 
     $("#shopreport tr").remove();
-    
+
     $("#shopreport").append("<tr class='shop" + 0 + "'></tr>");
       $(".shop" + 0).append("<td colspan='2' class='title'>" + shopList[index].shopName +" Donut Shop</td>");
 
@@ -247,7 +247,8 @@ function createUpdateForm(){
   $("#updateCustomer").append("<input type='text' name='updateMaxCust' placeholder='Max Customers'/>");
   $("#update0").append("<div id='updateHours'></div>");
   $("#updateHours").append("<input type='text' name='updateDonutsHour' placeholder='Donuts Per Hour'/>");
-  $("#update0").append("<button class='updateShopBtn'>Update Shop</button>"); 
+  $("#updateHours").append("<input type='text' name='updateOperationHours' placeholder='Hour of Operation'/>");
+  $("#update0").append("<button class='updateShopBtn'>Update Shop</button>");
 };
 
 function createAddForm(){
@@ -258,7 +259,7 @@ function createAddForm(){
   $("#addForm").append("<input type='text' name='addMaxCust' placeholder='Minimum Customers'/>");
   $("#addForm").append("<input type='text' name='addDonutsHour' placeholder='Donuts Per Hour'/>");
 
-  $("#addForm").append("<button class='addShopBtn'>Add Shop</button>"); 
+  $("#addForm").append("<button class='addShopBtn'>Add Shop</button>");
 };
 
 
@@ -281,8 +282,9 @@ $(".updateShopBtn").on("click", function(e){
   var minCust = $("input[name=updateMinCust]").val();
   var maxCust = $("input[name=updateMaxCust]").val();
   var donutsHour = $("input[name=updateDonutsHour]").val();
+  var operationHour = $("input[name=updateOperationHours]").val();
 
-  shopManager.updateShopByIndex(index, minCust, maxCust, donutsHour, numHours);
+  shopManager.updateShopByIndex(index, minCust, maxCust, donutsHour, operationHour);
   shopManager.generateReport();
   shopManager.generateShopReport(index);
   shopManager.createShopButtons();
